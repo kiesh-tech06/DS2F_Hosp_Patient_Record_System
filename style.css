@@ -279,6 +279,73 @@ header .fa-times{
     line-height: 1.8;
 }
 
+/*appointment section*/
+.contact{
+    background: #eee;
+
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+
+}
+
+.contact .row .images .img{
+    width:50vw;
+    height: 70vh;
+
+}
+
+.contact .row .form-container{
+    width: 50%;
+    padding-right: 6rem;
+
+}
+
+.contact .row .form-container input, textarea{
+    height: 4rem;
+    width: 100%;
+    background: var(--white);
+    border: none;
+    border-radius: 5rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: var(--blue);
+    font-size: 1.7rem;
+
+}
+
+.contact .row .form-container input:focus, textarea:focus{
+    border: .2rem solid var(--blue);
+
+}
+
+.contact .row .form-container textarea{
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+
+}
+
+.contact .row .form-container input[type="submit"]{
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 2rem;
+    width: 17rem;
+
+}
+
+.contact .row .form-container input[type="submit"]:hover{
+    background: var(--white);
+    color: var(--blue);
+    border: 1rem solid var(--blue);
+
+}
 
 
 
@@ -356,6 +423,24 @@ header .fa-times{
 
     .about .box-container .box .content{
         width: 100%;
+    }
+
+
+    /*appt form media query*/
+    .contact .row{
+        flex-flow: column;
+    
+    }
+
+    .contact .row .images img{
+        height: 50vh;
+        width: 90vw;
+
+    }
+
+    .contact .row .form-container{
+        width: 90%;
+        padding: 0;
     }
 
 }

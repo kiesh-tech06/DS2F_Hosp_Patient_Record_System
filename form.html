@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form - Hospital Cares</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <a href="home.html" class="logo"><span>H</span>ospital <span>C</span>ares.</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="home.html#about">about</a></li>
+                <li><a href="#bookings">bookings</a></li>
+            </ul>
+        </nav>
+
+        <div class="fas fa-bars"></div>
+    </header>
+
+    <!-- appointment form section -->
+   <section id="contact" class="contact">
+        
+        <h1 class="heading">Appointment</h1>
+        <h3 class="title"> Please fill in the form to book an appointment. </h3>
+
+        <div class="row">
+
+            <div class="images">
+                <img src="appt.png" alt="">
+            </div>
+
+            <div class="form-container">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Phone Number" id="phone" required>
+                <textarea cols="30" rows="10" placeholder="What's troubling you today?"></textarea>
+                <input type="submit" value="send">
+            </div>
+        </div>
+
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- existing navbar js -->
+    <script src="app.js"></script>
+
+    <!-- form js -->
+    <script src="form.js"></script>
+
+</body>
+</html>
