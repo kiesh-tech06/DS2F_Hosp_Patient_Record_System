@@ -50,11 +50,7 @@ html{
 }
 
 
-
-
-
-
-/*header navbar section start*/
+/* header navbar section start */
 header{
     width: 96%;
     background: var(--white);
@@ -67,13 +63,11 @@ header{
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1000;
-
+    
 }
 
-
-/*logo name*/
 header a{
-    color:var(--black);
+    color: var(--black);
 
 }
 
@@ -92,44 +86,77 @@ header .logo span{
 
 }
 
-header .navbar ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-
-}
-
-header .navbar ul li a{
-    font-size: 2rem;
-    color: var(--black);
-}
-
-header .navbar ul li a:hover{
-    color: var(--blue);
-
-}
-
+/* always show the three-line menu icon */
 header .fa-bars{
     font-size: 3rem;
     color: var(--blue);
     cursor: pointer;
+    display: block;
+
+}
+
+/* dropdown menu hidden by default */
+header .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 22rem;
+    background: var(--white);
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.2);
+    border-radius: .5rem;
     display: none;
+
+}
+
+/* show dropdown when clicked */
+header .navbar.nav-toggle{
+    display: block;
+
+}
+
+header .navbar ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem 0;
+
+}
+
+header .navbar ul li{
+    width: 100%;
+    text-align: center;
+
+}
+
+header .navbar ul li a{
+    display: block;
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem;
+
+}
+
+header .navbar ul li a:hover{
+    color: var(--blue);
+    background: #f2f2f2;
 
 }
 
 header .fa-times{
     transform: rotate(180deg);
+
 }
 
 .header-active{
     top: 0;
     width: 100%;
     box-shadow: .1rem .3rem rgba(0,0,0,.3);
+
 }
 
-
 /* header navbar section end */
+
+
 
 /*home section start*/
 .home{
