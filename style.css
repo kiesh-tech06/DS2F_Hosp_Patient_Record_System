@@ -49,8 +49,30 @@ html{
 
 }
 
+/*heading*/
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--blue);
+    padding: 1rem;
+    padding-top: 8rem;
+    letter-spacing: .2rem;
+}
 
-/* header navbar section start */
+
+/*title*/
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 0rem 1rem;
+    font-weight: 300;
+}
+
+
+
+
+/* header navbar section */
 header{
     width: 96%;
     background: var(--white);
@@ -63,7 +85,7 @@ header{
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1000;
-    
+
 }
 
 header a{
@@ -154,11 +176,9 @@ header .fa-times{
 
 }
 
-/* header navbar section end */
 
 
-
-/*home section start*/
+/*home section */
 .home{
     min-height: 100vh;
     padding-top: 10rem;
@@ -194,9 +214,63 @@ header .fa-times{
 
 
 
-/*home section end*/
+/*about section*/
+.about{
+    background: #f9f9f9;
 
+}
 
+.about .box-container{
+    padding: 4rem 0;
+
+}
+
+.about .box-container .box{
+    box-shadow: 0 .3rem 5rem rgba(0,0,0,.3);
+    border-radius: .5rem;
+    background: var(--white);
+    margin: 4rem auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.about .box-container .box .images{
+    height: 40rem;
+    width: 50%;
+
+}
+
+.about .box-container .box .images img{
+    height: 100%;
+    width: 100%;
+
+}
+
+/*heading and text*/
+.about .box-container .box .content{
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+
+}
+
+.about .box-container .box .content h3{
+    font-size: 3rem;
+    color: var(--blue);
+    display: flex;
+    align-items: start;
+
+}
+
+.about .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+    text-align: justify;
+}
 
 
 
@@ -261,11 +335,21 @@ header .fa-times{
         width: 100%;
     }
 
+    /* about media query*/
+    .about .box-container .box{
+        flex-flow: column;
+        width: 90%;
+
+    }
+
+    .about .box-container .box .images{
+        width: 100%;
+    }
 
 
-
-
-
+    .about .box-container .box .content{
+        width: 100%;
+    }
 
 }
 
