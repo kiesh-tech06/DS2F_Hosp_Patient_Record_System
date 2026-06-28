@@ -21,7 +21,8 @@
             <ul>
                 <li><a href="home.html">home</a></li>
                 <li><a href="home.html#about">about</a></li>
-                <li><a href="#bookings">bookings</a></li>
+                <li><a href="records.php">records</a></li>
+                <li><a href="login.php">login</a></li>
             </ul>
         </nav>
 
@@ -40,26 +41,21 @@
                 <img src="appt.png" alt="">
             </div>
 
-            <div class="form-container">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="number" placeholder="Phone Number" id="phone" required>
-                <textarea cols="30" rows="10" placeholder="What's troubling you today?"></textarea>
+            <!-- real form: sends data to submit_appointment.php -->
+            <form class="form-container" id="appointmentForm" method="POST" action="submit_appointment.php">
+
+                <!-- message shown after submitting (success or error) -->
+                <p id="formMessage"></p>
+
+                <input type="text"   name="full_name" id="full_name" placeholder="Full Name" required>
+                <input type="email"  name="email"     id="email"     placeholder="Email" required>
+                <input type="number" name="phone"     id="phone"     placeholder="Phone Number" required>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="What's troubling you today?"></textarea>
                 <input type="submit" value="send">
-            </div>
+            </form>
         </div>
 
    </section>
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- jquery cdn -->
